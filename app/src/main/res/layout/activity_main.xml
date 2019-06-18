@@ -20,8 +20,9 @@
 
     <Button
             android:id="@+id/increment_button_view"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_toRightOf="@id/value_of_quantity_text_view"
             android:layout_below="@id/quantity_text_view"
             android:text="+"
             android:onClick="increment"
@@ -31,19 +32,21 @@
             android:id="@+id/value_of_quantity_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/increment_button_view"
+            android:layout_below="@id/quantity_text_view"
+            android:layout_toRightOf="@id/decrement_button_view"
             android:paddingTop="16dp"
             android:paddingBottom="16dp"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:text="2"
+            android:text="1"
+            tools:ignore="HardcodedText"
     />
 
     <Button
             android:id="@+id/decrement_button_view"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_below="@id/value_of_quantity_text_view"
+            android:layout_width="53dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/quantity_text_view"
             android:text="-"
             android:onClick="decrement"
     />
@@ -67,7 +70,7 @@
             android:paddingBottom="16dp"
             android:textColor="#000000"
             android:textSize="16sp"
-            android:text="\$10"
+            android:text="Total: $5 \nThank you!"
     />
 
     <Button
